@@ -1,0 +1,27 @@
+{
+  "name": "tech-society-cyber",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+  "dev": "vite",
+  "term": "node server/terminal.js",
+  "dev:all": "concurrently -n WEB,TERM -c cyan,magenta \"vite\" \"node server/terminal.js\"",
+  "build": "vite build",
+  "preview": "vite preview"
+  },
+  "dependencies": {
+    "@homebridge/node-pty-prebuilt-multiarch": "^0.14.1",
+    "@xterm/addon-fit": "^0.11.0",
+    "@xterm/xterm": "^6.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^10.0.6",
+    "vite": "^5.4.0"
+  }
+}
