@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "term": "node server/terminal.js",
-  "dev:all": "concurrently -n WEB,TERM -c cyan,magenta \"vite\" \"node server/terminal.js\"",
-  "build": "vite build",
-  "preview": "vite preview"
+    "dev": "vite",
+    "term": "node server/terminal.js",
+    "dev:all": "concurrently -n WEB,TERM -c cyan,magenta \"vite\" \"node server/terminal.js\"",
+    "build": "npx vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@homebridge/node-pty-prebuilt-multiarch": "^0.14.1",
